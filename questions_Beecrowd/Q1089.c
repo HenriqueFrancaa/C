@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdbool.h>
 
 int main(){
     int n, h;
@@ -22,7 +21,7 @@ int main(){
             if(wave[j] > wave[j-1] && wave[j] > wave[j+1]){
                 cont++;
             }
-            if(wave[j] < wave[j-1] && wave[j] < wave[j+1]){
+            if(wave[j] < wave[j-1] && wave[j] > wave[j+1]){
                 cont++;
             }
         }
