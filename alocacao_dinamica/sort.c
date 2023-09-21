@@ -5,18 +5,19 @@ void swap(int *i, int *j){
     int t = *i;
     *i = *j;
     *j = t;
+    // fazendo a troca
 }
 
 
 int *find_min(int *v, int s, int e){
     int *min = v+s;
     for(int i = s+1; i < e; i++){
-        if(*(v+i) < *min){
+        if(*(v+i) < *min){      // encontrando o menor valor.
             min = v+i;
         }
     }
 
-    return min;
+    return min; // retornando o endereço que está o menor valor.
 }
 
 
@@ -31,7 +32,7 @@ void sort(int *v, int n){
 int main(){
     int n;
     scanf("%d", &n);
-    int *v = (int *)malloc(n * sizeof(int));
+    int *v = (int *)malloc(n * sizeof(int)); // solicitando o espaço da memoria dinamica
 
     for(int i = 0; i < n; i++){
         scanf("%d", (v+i));
