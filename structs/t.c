@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
 #include <string.h>
 
 
-typedef struct{
+typedef struct
+{
     char num[1000];
-}num;
+}numero;
 
 char s[1000];
 char a;
@@ -30,25 +30,22 @@ void soma(char n1[], char n2[], int t){
 }
 
 int main(){
+
     int t;
     scanf("%d ", &t);
-    num n1,n2;
+    numero n1,n2;
+    fgets(n1.num, 1000, stdin);
+    fgets(n2.num, 1000, stdin);
 
-    memset(s,'0',sizeof(s));
+    memset(s,'0', t);
 
-    gets(n1.num);
-    gets(n2.num);
-
-    
     soma(n1.num,n2.num,t);
 
     if(a != '0')printf("%c", a);
-    
 
     for(int i = 0; i < t; i++){
         printf("%d", s[i]);
     }printf("\n");
-
 
     return 0;
 }
