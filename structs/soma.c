@@ -43,7 +43,7 @@ int main(){
     soma(n1.num,n2.num,t);
 
     if(a != '0')printf("%c", a);
-    
+        
 
     for(int i = 0; i < t; i++){
         printf("%d", s[i]);
